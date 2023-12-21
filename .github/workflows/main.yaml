@@ -1,0 +1,24 @@
+name: Deploy site to Oracle Free Tier
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build and deploy
+        env:
+          APPLICATION_ARTIFACT: ${{secrets.APPLICATION_ARTIFACT}}
+          APPLICATION_BUILD_FOLDER: ${{secrets.APPLICATION_BUILD_FOLDER}}
+          AUTH_PRIVATE_KEY: ${{secrets.AUTH_PRIVATE_KEY}}
+          OCI_HOST: ${{secrets.OCI_HOST}}
+          OCI_DEPLOYMENT_LOCATION: ${{secrets.OCI_DEPLOYMENT_LOCATION}}
+
+        run: |
+          npm run build
+          ./deploy.sh
