@@ -39,12 +39,24 @@ export function Lab(){
       <div className="work-title">
         <h3>Estradas do Medo - (Scary Roads)</h3>
       </div>
-      <a className="work-image" href="http://react-shooter.lelis718.com.br" target="_blank"  rel="noreferrer"><img
+      <a className="work-image" href="https://github.com/lelis718/TerrorStreets" target="_blank"  rel="noreferrer"><img
           src="/scary-streets.png" alt="screenshot of the scary streets game" /></a>
       <p className="main-description">A little game designed and produced in a week for a GameJam. :)</p>
       <p className="main-description">(Unity, Desktop and Android)</p>
       <a href="https://github.com/lelis718/TerrorStreets" target="_blank" rel="noreferrer">GitHub</a><br />
       <p>comming soon...</p>
+    </div>
+    
+    <div className="section text">
+      <div className="work-title">
+        <h3>Music Practice Planner (WIP)</h3>
+      </div>
+      <a className="work-image" href="https://github.com/lelis718/MusicPracticePlanner" target="_blank"  rel="noreferrer"><img
+          src="/music-planner-swagger.png" alt="screenshot of the scary streets game" /></a>
+      <p className="main-description">My current "Work In Progress". </p>
+      <p> An application to manage the music practice, acctually is also a practice on the Domain Driven Design standards :)</p>
+      <p className="main-description">(.Net Core)</p>
+      <a href="https://github.com/lelis718/MusicPracticePlanner" target="_blank" rel="noreferrer">GitHub</a><br />
     </div>
 
     <div className="section text">
