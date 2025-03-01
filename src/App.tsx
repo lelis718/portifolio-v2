@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router";
 import { Footer } from "./components/Footer";
 import { SiteNavigation } from "./components/SiteNavigation";
 import { AboutMe } from "./pages/AboutMe";
@@ -13,15 +13,15 @@ export function App() {
 
   return (
     <>
-        <SiteNavigation />
-        <Routes>
-          <Route path="/" Component={Home}></Route>
-          <Route path="/about-me" Component={AboutMe}></Route>
-          <Route path="/work" Component={Work}></Route>
-          <Route path="/skills" Component={Skills}></Route>
-          <Route path="/lab" Component={Lab}></Route>
-        </Routes>
-        <Footer />
+      <SiteNavigation />
+      <Routes>
+        <Route path="/" Component={Home}></Route>
+        <Route path="/about-me" Component={AboutMe}></Route>
+        <Route path="/work" Component={Work}></Route>
+        <Route path="/skills" Component={Skills}></Route>
+        <Route path="/lab" Component={Lab}></Route>
+      </Routes>
+      <Footer />
     </>
   );
 }

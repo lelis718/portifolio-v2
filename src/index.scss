@@ -2,6 +2,7 @@
 
 @mixin framed-icon($color, $top: -9px, $left: -3px) {
   position: relative;
+
   &::after {
     content: (" ");
     position: absolute;
@@ -35,40 +36,65 @@ code {
 
 .footer {
   position: fixed;
-  bottom:0;
-  width:100%;
-	padding: 0px 0;
-	background-color: $lelis-color;
+  bottom: 0;
+  width: 100%;
+  padding: 0px 0;
+  background-color: $lelis-color;
 
-.mail {
-  float:right;
-  padding-top: 6px;
-  margin-right: 20px;
-  a,a:visited{
-    
-    display: block;
-		color:white;
-		text-decoration: none;
-	}
-}
-	
-	.contact-icons {
-    float:right;
+  .mail {
+    float: right;
+    padding-top: 6px;
+    margin-right: 20px;
 
-    a > span {
+    a,
+    a:visited {
+
+      display: block;
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .contact-icons {
+    float: right;
+
+    a>span {
       margin-right: 5px;
       margin-left: 5px;
-      width:20px;
-      height:20px;
+      width: 20px;
+      height: 20px;
       display: inline-block;
       background-size: contain;
-      &.linkedin{ background-image: url("../public/contact/linkedin.svg") };
-      &.hackerrank{ background-image: url("../public/contact/hackerrank.svg") };
-      &.stackoverflow{ background-image: url("../public/contact/stackoverflow.svg") };
-      &.reddit{ background-image: url("../public/contact/reddit.svg"); width: 25px; height: 25px; margin-bottom: -3px; };
+
+      &.linkedin {
+        background-image: url("../public/contact/linkedin.svg")
+      }
+
+      ;
+
+      &.hackerrank {
+        background-image: url("../public/contact/hackerrank.svg")
+      }
+
+      ;
+
+      &.stackoverflow {
+        background-image: url("../public/contact/stackoverflow.svg")
+      }
+
+      ;
+
+      &.reddit {
+        background-image: url("../public/contact/reddit.svg");
+        width: 25px;
+        height: 25px;
+        margin-bottom: -3px;
+      }
+
+      ;
     }
 
-    }
+  }
 }
 
 
@@ -79,9 +105,14 @@ code {
   position: fixed;
   width: 100%;
   z-index: 2;
+
   .MuiTab-labelIcon {
     border: solid 1px #1f1f1f;
+    color: #3a3a3a;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
+
   .MuiTab-wrapper {
     flex-direction: row;
   }
@@ -89,9 +120,11 @@ code {
   .MuiButtonBase-root.Mui-selected {
     background-color: #1f1f1f;
   }
+
   .MuiSvgIcon-root {
-    margin-right: 10px;
+    // margin-right: 10px;
   }
+
   .MuiIconButton-root {
     color: #ffffff;
   }
@@ -100,6 +133,7 @@ code {
 div.MuiPaper-root {
   background: #1f1f1f;
   color: white;
+
   .MuiListItemIcon-root {
     color: #ffffff;
   }
@@ -149,6 +183,7 @@ div.MuiPaper-root {
   .footer-section {
     height: 50vh;
   }
+
   .fixed-content {
     position: fixed;
     top: -45px;
@@ -175,6 +210,7 @@ div.MuiPaper-root {
 
     .image-mask {
       z-index: 3;
+
       .image-transition {
         width: 100%;
         height: 100%;
@@ -212,13 +248,16 @@ div.MuiPaper-root {
     .section {
       height: 100vh;
       padding: 16px;
+
       h3 {
         border-bottom: 1px solid #4e4e4e;
         padding-bottom: 8px;
       }
+
       &.text {
         height: auto;
         text-align: center;
+
         p,
         h3 {
           text-align: left;
@@ -243,20 +282,25 @@ div.MuiPaper-root {
       opacity: 1;
     }
   }
+
   strong {
     font-weight: bolder;
     color: $lelis-color;
   }
 }
+
 .work-container {
   padding-top: 45px;
   color: white;
+
   .section {
     padding: 16px;
+
     h3 {
       border-bottom: 1px solid #4e4e4e;
       padding-bottom: 8px;
     }
+
     &.text {
       height: auto;
     }
@@ -266,10 +310,12 @@ div.MuiPaper-root {
 .skill-level-bar {
   padding: 16px;
   position: relative;
+
   .level-bar {
     position: relative;
     width: 100%;
     height: 5px;
+
     .painted-bar {
       width: 100%;
       background-color: black;
@@ -282,18 +328,22 @@ div.MuiPaper-root {
         background-color: orange;
         width: 25%;
       }
+
       &.level-2::after {
         background-color: yellow;
         width: 50%;
       }
+
       &.level-3::after {
         background-color: greenyellow;
         width: 75%;
       }
+
       &.level-4::after {
         background-color: green;
         width: 100%;
       }
+
       &::after {
         content: "";
         width: 0;
@@ -305,6 +355,7 @@ div.MuiPaper-root {
       }
     }
   }
+
   ul.legend {
     padding-top: 0;
     width: 100%;
@@ -312,6 +363,7 @@ div.MuiPaper-root {
     padding-left: 0;
     margin: 0;
     margin-top: 5px;
+
     li {
       width: 10%;
       display: inline-block;
@@ -332,6 +384,7 @@ div.MuiPaper-root {
     margin-left: 16px;
     margin-right: 16px;
   }
+
   h3 {
     font-size: 1em;
     border-bottom: 1px solid #4e4e4e;
@@ -339,6 +392,7 @@ div.MuiPaper-root {
     margin-left: 16px;
     margin-right: 16px;
   }
+
   .skill-level-container {
     width: 65vw;
     display: inline-block;
@@ -362,184 +416,234 @@ div.MuiPaper-root {
     &.csharp {
       background-image: url("../public/skills/csharp.svg");
     }
+
     &.dotnet {
       background-image: url("../public/skills/netframework.svg");
     }
+
     &.java {
       @include framed-icon(white, 0px, -2px);
       background-image: url("../public/skills/java.png");
     }
+
     &.dart {
       background-image: url("../public/skills/dart.svg");
     }
+
     &.php {
       background-image: url("../public/skills/Antu_php.svg");
     }
+
     &.python {
       background-image: url("../public/skills/Python-logo-notext.svg");
     }
+
     &.nodejs {
       @include framed-icon(white);
       background-image: url("../public/skills/Node.js_logo.svg");
     }
+
     &.graphql {
       background-image: url("../public/skills/graphql.svg");
     }
+
     &.solr {
       @include framed-icon(black, -6px, -4px);
       background-image: url("../public/skills/solr.png");
     }
+
     &.camunda {
       background-image: url("../public/skills/camunda.svg");
     }
+
     &.cucumber {
       background-image: url("../public/skills/cucumber.png");
       background-size: 100px;
       background-position-x: -35px;
       background-position-y: -13px;
     }
+
     &.coremedia {
       @include framed-icon(white, -5px);
       background-image: url("../public/skills/CoreMedia_CMS_Logo_-_Stacked.svg.png");
     }
+
     &.rabbitmq {
       background-image: url("../public/skills/rabbitmq.png");
     }
+
     &.kafka {
       background-image: url("../public/skills/kafka.png");
     }
+
     &.html5 {
       background-image: url("../public/skills/HTML5_logo_and_wordmark.svg");
     }
+
     &.css3 {
       background-image: url("../public/skills/CSS3_logo_and_wordmark.svg");
     }
+
     &.javascript {
       background-image: url("../public/skills/Unofficial_JavaScript_logo_2.svg");
     }
+
     &.angular {
       background-image: url("../public/skills/Angular_full_color_logo.svg");
     }
+
     &.angularjs {
       @include framed-icon(white, -6px);
       background-image: url("../public/skills/angularjs.svg");
     }
+
     &.jquery {
       background-image: url("../public/skills/jquery.svg");
     }
+
     &.flash {
       background-image: url("../public/skills/flashplayer_app_RGB.svg");
     }
+
     &.unity {
       @include framed-icon(white, -3px, -1px);
       background-image: url("../public/skills/unity-3d-vector-icon-logo.svg");
     }
+
     &.react {
       background-image: url("../public/skills/React-icon.svg");
     }
+
     &.sencha {
       @include framed-icon(white, -5px);
       background-image: url("../public/skills/extjs_logo-300x259.png");
     }
+
     &.cordova {
       background-image: url("../public/skills/logo-cordova.svg");
     }
+
     &.ionic {
       background-image: url("../public/skills/ionic.svg");
     }
+
     &.react {
       background-image: url("../public/skills/React-icon.svg");
     }
+
     &.flutter {
       background-image: url("../public/skills/flutterio-icon.svg");
     }
+
     &.android {
       background-image: url("../public/skills/android-svgrepo-com.svg");
     }
+
     &.apple {
       background-image: url("../public/skills/Apple_Computer_Logo_rainbow.svg");
     }
+
     &.windows-phone {
       background-image: url("../public/skills/windows-phone.svg");
     }
+
     &.sqlite {
       background-image: url("../public/skills/Sqlite-square-icon.svg");
     }
+
     &.sqlserver {
       background-image: url("../public/skills/logo-sql-server.svg");
     }
+
     &.postgresql {
       background-image: url("../public/skills/Postgresql_elephant.svg");
     }
+
     &.mysql {
       background-image: url("../public/skills/mysql-icon.svg");
     }
+
     &.oracle {
       background-image: url("../public/skills/oracle.svg");
     }
+
     &.mongodb {
       background-image: url("../public/skills/Antu_mongodb.svg");
     }
+
     &.firebird {
       background-image: url("../public/skills/Firebird_logo.svg");
     }
+
     &.docker {
       background-image: url("../public/skills/Docker.svg");
     }
+
     &.jenkins {
       background-image: url("../public/skills/Jenkins_logo.svg");
     }
+
     &.kibana {
       background-image: url("../public/skills/elastic-kibana-logo.png");
     }
+
     &.grafana {
       background-image: url("../public/skills/Grafana_logo.svg.png");
     }
+
     &.new-relic {
       background-image: url("../public/skills/new_relic_logo_vertical_clear_white.png");
     }
   }
 
-  
+
 }
-.lab-container{
+
+.lab-container {
   display: flex;
   flex-direction: column;
   padding-top: 45px;
   color: white;
-  strong {
-    color:$lelis-color
-  }
-	> p{
-		margin-left:16px;
-		margin-right:16px;
-	}
 
-	.section {
-		padding:16px;
-		h3{
-			border-bottom: 1px solid #4e4e4e;
-			padding-bottom:8px;
-		}
-		&.text {
-		  height:auto;
-		}
-		a,a:visited{
-			color:white;
-			text-decoration: none;
-		}
-	  }
-	  
-	  .work-image{
-		  display:block;
-		  width:100%;
-		  img{
-			  width:50vw;
-			  display:block;
-			  margin-left:auto;
-			  margin-right:auto;
-		  }
-	  }
+  strong {
+    color: $lelis-color
+  }
+
+  >p {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .section {
+    padding: 16px;
+
+    h3 {
+      border-bottom: 1px solid #4e4e4e;
+      padding-bottom: 8px;
+    }
+
+    &.text {
+      height: auto;
+    }
+
+    a,
+    a:visited {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .work-image {
+    display: block;
+    width: 100%;
+
+    img {
+      width: 50vw;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 

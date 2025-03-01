@@ -8,7 +8,7 @@ export function AboutMe() {
   const [imageOpacity, setImageOpacity] = useState(1);
 
   useEffect(() => {
-    const handleScroll = (event: any) => {
+    const handleScroll = () => {
       const elHeight = ref?.current?.clientHeight;
       const scrollY = window.scrollY - ref?.current?.offsetTop;
 
@@ -26,7 +26,7 @@ export function AboutMe() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(null);
+    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -47,14 +47,14 @@ export function AboutMe() {
           <div className="section text">
             <h3>Developer for passion</h3>
             <p>
-            Throughout my career, I have had the opportunity to develop a diverse range of web applications over the past <strong>{xpYears} years</strong>. While I have earned various titles such as Backend Developer, Front End Developer, Senior System Analyst, and more, my passion lies in building cool stuff. I am a creative problem solver who enjoys working on challenging projects and delivering high-quality results.
+              Throughout my career, I have had the opportunity to develop a diverse range of web applications over the past <strong>{xpYears} years</strong>. While I have earned various titles such as Backend Developer, Front End Developer, Senior System Analyst, and more, my passion lies in building cool stuff. I am a creative problem solver who enjoys working on challenging projects and delivering high-quality results.
             </p>
           </div>
           <div className="section text">
             <h3>My Family</h3>
             <p>
               Since this is some section about me, my family must be present,
-              they are the most important people in my life. :) 
+              they are the most important people in my life. :)
             </p>
           </div>
           <div className="section text">
@@ -72,8 +72,8 @@ export function AboutMe() {
             <p>
               Well... Having two kids, your dreams quite change a little bit,
               but as far as try to keep them safe.
-              </p>
-              <p> I also intent to publish my indie games someday, for now, the kids are the only ones who plays them. </p>
+            </p>
+            <p> I also intent to publish my indie games someday, for now, the kids are the only ones who plays them. </p>
           </div>
           <div ref={ref} className="image-mask image-scroller ">
             <div className="image-transition background-1"></div>

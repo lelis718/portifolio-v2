@@ -1,24 +1,8 @@
-import {
-  Box,
-  Drawer,
-  IconButton,
-  ListItemIcon,
-  ListItemText,
-  MenuList,
-  Tab,
-  Tabs
-} from "@material-ui/core";
-import {
-  AccountCircle,
-  Assessment,
-  Build,
-  Home,
-  Menu,
-  Work
-} from "@material-ui/icons";
-import { MenuItem, useMediaQuery } from "@mui/material";
+import { AccountCircle, Assessment, Build, Home, Menu, Work } from "@mui/icons-material";
+import { Box, Drawer, IconButton, ListItemIcon, ListItemText, MenuItem, MenuList, Tab, Tabs, useMediaQuery } from "@mui/material";
 import { useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router";
+
 
 const menuItems = [
   { href: "/", name: "Home", icon: <Home /> },
@@ -44,9 +28,9 @@ export function SiteNavigation() {
     return (
       <nav>
         <Tabs
-          style={{ minHeight: "45px", height: "45px" }}
+          style={{ minHeight: "53px", height: "53px" }}
           value={location.pathname}
-          onChange={(evt,newValue) => changeRoute(newValue)}
+          onChange={(_, newValue) => changeRoute(newValue)}
         >
           {menuItems.map((item) => (
             <Tab
@@ -80,18 +64,18 @@ export function SiteNavigation() {
         anchor="left"
         open={sidebarOpened}
         onClose={() => setSidebarOpened(false)}
-      > 
+      >
         <div className="logo-image">
 
         </div>
-          <MenuList style={{width:250}}>
-            {menuItems.map((item) => (
-              <MenuItem key={item.href} onClick={() => changeRoute(item.href) }>
-                <ListItemIcon> {item.icon} </ListItemIcon>
-                <ListItemText>{item.name}</ListItemText>
-              </MenuItem>
-            ))}
-          </MenuList>
+        <MenuList>
+          {menuItems.map((item) => (
+            <MenuItem key={item.href} onClick={() => changeRoute(item.href)}>
+              <ListItemIcon> {item.icon} </ListItemIcon>
+              <ListItemText>{item.name}</ListItemText>
+            </MenuItem>
+          ))}
+        </MenuList>
       </Drawer>
     );
   };
