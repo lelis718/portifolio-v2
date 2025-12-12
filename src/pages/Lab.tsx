@@ -18,7 +18,7 @@ export function Lab() {
       <div className="work-title">
         <h3>Portifolio - Angular Version</h3>
       </div>
-      <a className="work-image" href="http://legacy-portifolio.lelis718.com.br" target="_blank" rel="noreferrer">
+      <a className="work-image" href="https://github.com/lelis718/portifolio" target="_blank" rel="noreferrer">
         <img src="/portifolio-angular.png" alt="legacy version of the portifolio" /></a>
       <p className="main-description">This site. Gave me plenty of work during a weekend :)</p>
       <p className="main-description">(Angular 8, Web)</p>
