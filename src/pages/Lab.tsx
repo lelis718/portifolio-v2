@@ -29,7 +29,7 @@ export function Lab() {
       <div className="work-title">
         <h3>React Space Shooter</h3>
       </div>
-      <a className="work-image" href="http://react-shooter.lelis718.com.br" target="_blank" rel="noreferrer"><img
+      <a className="work-image" href="https://github.com/lelis718/react-shooter" target="_blank" rel="noreferrer"><img
         src="/react-shooter.png" alt="screenshot of the react shooter game" /></a>
       <p className="main-description">A Space Shooter game made entirely using React :)</p>
       <p className="main-description">(React, Web)</p>
