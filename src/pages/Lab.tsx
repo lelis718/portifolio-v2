@@ -47,17 +47,6 @@ export function Lab() {
       <p>comming soon...</p>
     </div>
 
-    <div className="section text">
-      <div className="work-title">
-        <h3>Music Practice Planner (WIP)</h3>
-      </div>
-      <a className="work-image" href="https://github.com/lelis718/MusicPracticePlanner" target="_blank" rel="noreferrer"><img
-        src="/music-planner-swagger.png" alt="screenshot of the scary streets game" /></a>
-      <p className="main-description">My current "Work In Progress". </p>
-      <p> An application to manage the music practice, acctually is also a practice on the Domain Driven Design standards :)</p>
-      <p className="main-description">(.Net Core)</p>
-      <a href="https://github.com/lelis718/MusicPracticePlanner" target="_blank" rel="noreferrer">GitHub</a><br />
-    </div>
 
     <p>&nbsp;</p>
 
